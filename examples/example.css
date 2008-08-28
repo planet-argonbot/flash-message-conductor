@@ -11,17 +11,17 @@
   margin-bottom: 0;
 }
 
-#flash_messages .error {
+#flash_messages p.error {
   background: #fcc;
   border: 1px solid #f00;
 }
 
-#flash_messages .notice {
+#flash_messages p.notice {
   background: #fee37a;
   border: 1px solid #fd9b5b;
 }
 
-#flash_messages .message {
+#flash_messages p.message {
   background: #cbf285;
   border: 1px solid #3cab09;
 }
