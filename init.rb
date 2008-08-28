@@ -1,10 +1,7 @@
 # Include hook code here
-require File.dirname(__FILE__) + '/lib/argon_helpers'
+require File.dirname(__FILE__) + '/lib/flash_message_conductor'
 
-ActionController::Base.send( :include, PlanetArgon::ControllerHelpers )
-ActionView::Base.send( :include, PlanetArgon::ViewHelpers )
+ActionController::Base.send( :include, PlanetArgon::FlashMessageConductor::ControllerHelpers )
+ActionView::Base.send( :include, PlanetArgon::FlashMessageConductor::ViewHelpers )
 
-# override field errors
-ActionView::Base.field_error_proc = 
-         Proc.new{ |html_tag, instance| "<span class=\"field_with_errors\">#{html_tag}</span>" }
 
