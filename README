@@ -1,7 +1,7 @@
 Flash Message Conductor
 ============
 
-A collection of helpers that we tend to use across most of our projects.
+A simple pattern for managing flash messages in your Ruby on Rails application.
 
 
 Example
