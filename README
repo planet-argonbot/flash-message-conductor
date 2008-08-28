@@ -1,13 +1,19 @@
 ArgonHelpers
 ============
 
-Introduction goes here.
+A collection of helpers that we tend to use across most of our projects.
 
 
 Example
 =======
 
-Example goes here.
+# in controllers...
+
+add_message( 'foo' ) 
+
+is the equivalent of
+
+flash[:message] = 'foo'
 
 
-Copyright (c) 2008 [name of plugin creator], released under the MIT license
+Copyright (c) 2008 Planet Argon, released under the MIT license
