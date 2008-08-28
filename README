@@ -7,13 +7,29 @@ A collection of helpers that we tend to use across most of our projects.
 Example
 =======
 
-# in controllers...
+# Controller helpers
 
-add_message( 'foo' ) 
+add_message( 'foo' )
 
 is the equivalent of
 
 flash[:message] = 'foo'
+
+Controller helpers included:
+
+add_message( message ) 
+add_notice( message )
+add_error( message )
+
+# View helpers
+
+<%= render_flash_messages %>
+
+produces:
+
+<div id="flash_messages">
+  <p class="message">Task was added to this deliverable...</p>
+</div>
 
 
 Copyright (c) 2008 Planet Argon, released under the MIT license
