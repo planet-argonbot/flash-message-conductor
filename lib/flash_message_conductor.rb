@@ -24,7 +24,7 @@ module PlanetArgon
         content_tag( "p", message, :class => "#{css_class}" )
       end
     
-      def render_flash_messages( div_id = "flash_messages"  )
+      def render_flash_messages( div_id = "flash_messages", div_class = "" )
         div_content = ''
         FLASH_MESSAGE_TYPES.each do |key|
           div_content << render_flash_message( key.to_s, flash[key] ) unless flash[key].blank?
@@ -32,7 +32,7 @@ module PlanetArgon
         if div_content.blank?
           return ""
         else
-          return content_tag( 'div', div_content, :id => div_id )
+          return content_tag( 'div', div_content, :id => div_id, :class => div_class )
         end
       end
     end
