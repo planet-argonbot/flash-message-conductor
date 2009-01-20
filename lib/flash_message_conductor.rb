@@ -35,6 +35,14 @@ module PlanetArgon
           return content_tag( 'div', div_content, :id => div_id, :class => div_class )
         end
       end
+      
+      def is_flash_message_set?
+        flash_set = false
+        FLASH_MESSAGE_TYPES.each do |key|
+          flash_set = true unless flash[key].blank?
+        end
+        return flash_set
+      end
     end
   end
 end
