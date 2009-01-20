@@ -36,7 +36,7 @@ module PlanetArgon
         end
       end
       
-      def is_flash_message_set?
+      def flash_message_set?
         flash_set = false
         FLASH_MESSAGE_TYPES.each do |key|
           flash_set = true unless flash[key].blank?
