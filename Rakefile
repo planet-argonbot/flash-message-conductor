@@ -30,6 +30,7 @@ begin
     gemspec.email = "robby@planetargon.com"
     gemspec.homepage = "http://github.com/planetargon/flash-message-conductor"
     gemspec.authors = ["Robby Russell"]
+    gemspec.files = ["VERSION.yml", "lib/flash_message_conductor.rb", 'rails/init.rb', 'README', 'MIT-LICENSE']
   end
 rescue LoadError
   puts "Jeweler not available. Install it with: sudo gem install technicalpickles-jeweler -s http://gems.github.com"

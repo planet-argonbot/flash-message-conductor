@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.date = %q{2009-10-12}
   s.description = %q{A simple pattern for managing flash messages in your Ruby on Rails application}
   s.email = %q{robby@planetargon.com}
-  s.files = ["VERSION.yml", "lib/flash_message_conductor.rb"]
+  s.files = ["VERSION.yml", "lib/flash_message_conductor.rb", "rails/init.rb", "README", "MIT-LICENSE"]
   s.homepage = %q{http://github.com/planetargon/flash-message-conductor}
   s.rdoc_options = ["--inline-source", "--charset=UTF-8"]
   s.require_paths = ["lib"]
