@@ -1,9 +1,9 @@
 # ArgonHelpers
 
-module PlanetArgon 
+module PlanetArgon
   module FlashMessageConductor
     FLASH_MESSAGE_TYPES = [ :error, :notice, :message ]
-    
+
     module ControllerHelpers
       def add_error(msg)
         flash[:error] = msg
@@ -16,14 +16,22 @@ module PlanetArgon
       def add_message(msg)
         flash[:message] = msg
       end
+
+      def flash_message_set?
+        flash_set = false
+        FLASH_MESSAGE_TYPES.each do |key|
+          flash_set = true unless flash[key].blank?
+        end
+        return flash_set
+      end
     end
-  
+
     module ViewHelpers
-      def render_flash_message( css_class, message = "" ) 
+      def render_flash_message( css_class, message = "" )
         return "" if message.nil? or message.blank?
         content_tag( "p", message, :class => "#{css_class}" )
       end
-    
+
       def render_flash_messages( div_id = "flash_messages", div_class = "" )
         div_content = ''
         FLASH_MESSAGE_TYPES.each do |key|
@@ -35,7 +43,7 @@ module PlanetArgon
           return content_tag( 'div', div_content, :id => div_id, :class => div_class )
         end
       end
-      
+
       def flash_message_set?
         flash_set = false
         FLASH_MESSAGE_TYPES.each do |key|
