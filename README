@@ -17,7 +17,7 @@ flash[:message] = 'foo'
 
 Controller helpers included:
 
-add_message( message ) 
+add_message( message )
 add_notice( message )
 add_error( message )
 
@@ -37,6 +37,11 @@ produces:
   <p class="error">Oops! Something went bonkers!</p>
 </div>
 
+# or...
+
+<% if flash_message_set? -%>
+  # do something
+<% end -%>
 
 
-Copyright (c) 2008 Planet Argon, released under the MIT license
+Copyright (c) 2011 Planet Argon, released under the MIT license

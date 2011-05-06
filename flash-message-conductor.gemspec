@@ -2,11 +2,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{flash-message-conductor}
-  s.version = "1.0.0"
+  s.version = "1.0.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Robby Russell"]
-  s.date = %q{2009-10-12}
+  s.date = %q{2011-05-06}
   s.description = %q{A simple pattern for managing flash messages in your Ruby on Rails application}
   s.email = %q{robby@planetargon.com}
   s.files = ["VERSION.yml", "lib/flash_message_conductor.rb", "rails/init.rb", "README", "MIT-LICENSE"]
