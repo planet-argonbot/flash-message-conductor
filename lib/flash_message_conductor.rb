@@ -27,20 +27,20 @@ module PlanetArgon
     end
 
     module ViewHelpers
-      def render_flash_message( css_class, message = "" )
+      def render_flash_message(css_class, message = "")
         return "" if message.nil? or message.blank?
-        content_tag( "p", message, :class => "#{css_class}" )
+        content_tag("p", message, :class => "#{css_class}")
       end
 
-      def render_flash_messages( div_id = "flash_messages", div_class = "" )
+      def render_flash_messages(div_id = "flash_messages", div_class = "")
         div_content = ''
         FLASH_MESSAGE_TYPES.each do |key|
-          div_content << render_flash_message( key.to_s, flash[key] ) unless flash[key].blank?
+          div_content << render_flash_message(key.to_s, flash[key]) unless flash[key].blank?
         end
         if div_content.blank?
           return ""
         else
-          return content_tag( 'div', div_content, :id => div_id, :class => div_class )
+          return content_tag('div', div_content, :id => div_id, :class => div_class)
         end
       end
 
