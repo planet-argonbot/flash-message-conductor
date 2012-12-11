@@ -2,9 +2,23 @@
 
 A simple pattern for managing flash messages in your Ruby on Rails application.
 
-***This branch is only used for Rails <= 2***
+## Installation
 
-## Example
+***This branch is only used for Rails 2. Looking for Rails 3? Use [https://github.com/planetargon/flash-message-conductor/tree/rails3](https://github.com/planetargon/flash-message-conductor/tree/rails3) instead.***
+
+Add this line to your application's Gemfile:
+
+    gem 'flash-message-conductor'
+
+And then execute:
+
+    $ bundle
+
+Or install it yourself as:
+
+    $ gem install flash-message-conductor
+
+## Usage
 
 ### Controller helpers
 
@@ -56,4 +70,12 @@ A simple pattern for managing flash messages in your Ruby on Rails application.
   <% end -%>
 ```
 
-Copyright (c) 2012 Planet Argon, released under the MIT license
+Copyright (c) 2008-2012 Planet Argon, released under the MIT license
+
+### Contributing
+
+1. Fork it
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create new Pull Request
