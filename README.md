@@ -4,19 +4,17 @@ A simple pattern for managing flash messages in your Ruby on Rails application.
 
 ## Installation
 
-***This branch is only used for Rails 2. Looking for Rails 3? Use [https://github.com/planetargon/flash-message-conductor/tree/rails3](https://github.com/planetargon/flash-message-conductor/tree/rails3) instead.***
+***This branch is considered an Alpha release.***
+
+***This branch is only used for Rails 3. Still using Rails 2? Use [https://github.com/planetargon/flash-message-conductor/tree/rails2](https://github.com/planetargon/flash-message-conductor/tree/rails2) instead.***
 
 Add this line to your application's Gemfile:
 
-    gem 'flash-message-conductor'
+    gem "flash-message-conductor", "~> 2.0", git: "git@github.com:planetargon/flash-message-conductor.git", branch: "rails3"
 
 And then execute:
 
     $ bundle
-
-Or install it yourself as:
-
-    $ gem install flash-message-conductor
 
 ## Usage
 
