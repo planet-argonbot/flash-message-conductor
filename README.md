@@ -10,11 +10,15 @@ A simple pattern for managing flash messages in your Ruby on Rails application.
 
 Add this line to your application's Gemfile:
 
-    gem "flash-message-conductor", "~> 2.0", git: "git@github.com:planetargon/flash-message-conductor.git", branch: "rails3"
+    gem "flash-message-conductor", "~> 2.0"
 
 And then execute:
 
     $ bundle
+
+Or install it yourself as:
+
+    gem install flash-message-conductor
 
 ## Usage
 
