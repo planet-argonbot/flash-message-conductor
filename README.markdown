@@ -8,7 +8,7 @@ A simple pattern for managing flash messages in your Ruby on Rails application.
 
 Add this line to your application's Gemfile:
 
-    gem 'flash-message-conductor'
+    gem "flash-message-conductor", "~> 1.0.2"
 
 And then execute:
 
@@ -16,7 +16,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install flash-message-conductor
+    $ gem install flash-message-conductor -v 1.0.2
 
 ## Usage
 
