@@ -4,7 +4,7 @@ A simple pattern for managing flash messages in your Ruby on Rails application.
 
 ## Installation
 
-***This branch is only used for Rails 2. Looking for Rails 3? Use [git@github.com:planetargon/flash-message-conductor.git](git@github.com:planetargon/flash-message-conductor.git) instead.***
+***This branch is only used for Rails 2. Looking for Rails 3? Use [https://github.com/planetargon/flash-message-conductor](https://github.com/planetargon/flash-message-conductor) instead.***
 
 Add this line to your application's Gemfile:
 
