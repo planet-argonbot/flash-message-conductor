@@ -1,25 +1,13 @@
 module FlashMessageConductor
-  FLASH_MESSAGE_TYPES = [ :error, :notice, :message ]
+  FLASH_MESSAGE_TYPES = [ :alert, :error, :notice, :message ]
 
   module ControllerHelpers
-    def add_error(msg)
-      flash[:error] = msg
-    end
-
-    def add_notice(msg)
-      flash[:notice] = msg
-    end
-
-    def add_message(msg)
-      flash[:message] = msg
+    FLASH_MESSAGE_TYPES.each do |message_type|
+      define_method("add_#{message_type.to_s}") { |message| flash[message_type] = message}
     end
 
     def flash_message_set?
-      flash_set = false
-      FLASH_MESSAGE_TYPES.each do |key|
-        flash_set = true unless flash[key].blank?
-      end
-      return flash_set
+      FLASH_MESSAGE_TYPES.any? { |key| flash[key].present? }
     end
   end
 end
