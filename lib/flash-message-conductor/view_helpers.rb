@@ -14,9 +14,5 @@ module FlashMessageConductor
       return "" if div_content.blank?
       content_tag('div', div_content.html_safe, :id => div_id, :class => div_class)
     end
-
-    def flash_message_set?
-      FLASH_MESSAGE_TYPES.any? { |key| flash[key].present? }
-    end
   end
 end
