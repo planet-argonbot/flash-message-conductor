@@ -8,7 +8,7 @@ A simple pattern for managing flash messages in your Ruby on Rails application.
 
 Add this line to your application's Gemfile:
 
-    gem "flash-message-conductor", "~> 2.0"
+    gem "flash-message-conductor", "~> 2.0.1"
 
 And then execute:
 
@@ -38,6 +38,7 @@ Or install it yourself as:
   add_message(message)
   add_notice(message)
   add_error(message)
+  add_alert(message)
 ```
 
 ### View helpers
@@ -70,7 +71,7 @@ Or install it yourself as:
   <% end -%>
 ```
 
-Copyright (c) 2008-2012 Planet Argon, released under the MIT license
+Copyright (c) 2008-2013 Planet Argon, released under the MIT license
 
 ### Contributing
 
