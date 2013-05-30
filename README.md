@@ -31,6 +31,18 @@ Or install it yourself as:
 ```
   flash[:message] = 'foo'
 ```
+**Flash methods Keep, discard, and now are also supported**
+
+```
+  add_message('foo', :state => :keep)
+```
+
+**Is the equivalent of:**
+
+```
+  flash[:message] = 'foo'
+  flash.keep(:message)
+```
 
 **Rails Controller helpers included:**
 
