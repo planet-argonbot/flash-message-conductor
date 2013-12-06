@@ -8,7 +8,9 @@ A simple pattern for managing flash messages in your Ruby on Rails application.
 
 Add this line to your application's Gemfile:
 
-    gem "flash-message-conductor", "~> 2.0.1"
+```ruby
+gem "flash-message-conductor", "~> 2.0.1"
+```
 
 And then execute:
 
@@ -22,31 +24,31 @@ Or install it yourself as:
 
 ### Controller helpers
 
-```
+```ruby
   add_message('foo')
 ```
 
 **Is the equivalent of:**
 
-```
+```ruby
   flash[:message] = 'foo'
 ```
 **Flash methods Keep, discard, and now are also supported**
 
-```
+```ruby
   add_message('foo', :state => :keep)
 ```
 
 **Is the equivalent of:**
 
-```
+```ruby
   flash[:message] = 'foo'
   flash.keep(:message)
 ```
 
 **Rails Controller helpers included:**
 
-```
+```ruby
   add_message(message)
   add_notice(message)
   add_error(message)
@@ -55,13 +57,13 @@ Or install it yourself as:
 
 ### View helpers
 
-```
+```erb
   <%= render_flash_messages %>
 ```
 
 **Produces:**
 
-```
+```html
   <div id="flash_messages">
       <p class="message">You have successfully done XYZ...</p>
   </div>
@@ -69,7 +71,7 @@ Or install it yourself as:
 
 **Or... if you set an error:**
 
-```
+```html
   <div id="flash_messages">
       <p class="error">Oops! Something went bonkers!<p>
   </div>
@@ -77,7 +79,7 @@ Or install it yourself as:
 
 **Or:**
 
-```
+```erb
   <% if flash_message_set? -%>
     # do something
   <% end -%>
