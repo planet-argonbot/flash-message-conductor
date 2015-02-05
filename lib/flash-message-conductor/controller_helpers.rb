@@ -5,7 +5,7 @@ module FlashMessageConductor
     module ClassMethods
     end
     FLASH_MESSAGE_TYPES.each do |message_type|
-      define_method("add_#{message_type.to_s}") do |message, *options|
+      define_method("add_#{message_type}") do |message, *options|
         options = options.first || Hash.new
 
         flash[message_type] = message
